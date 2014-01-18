@@ -1,0 +1,1 @@
+		var s = document.getElementById("frame_navigation");s.location = s.location;

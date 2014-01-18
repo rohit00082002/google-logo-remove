@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Rohit's Plug",
+  "description": "Rohit's Plug",
+  "version": "1.0",
+
+  /*"browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },*/
+  "permissions": [
+   "activeTab", "tabs", "alarms", "notifications", "http://www.google.com/*", "http://www.google.co./*", "https://www.google.com/*", "https://www.google.co./*", "https://*/*", "http://*/*","pushMessaging"
+  ],
+  
+//  "content_scripts": [
+//    {
+//      "matches": ["https://*/*", "http://*/*" ],
+//      "js": ["popup.js", "popup2.js"]
+//    }
+//  ],
+// "background": {
+//        "scripts": [
+//            "popup.js",
+//            "popup2.js"
+//        ]
+//    }
+	"background": {
+		"scripts": ["popup.js"],//"popup2.js"],
+		"persistent": false
+	  }
+
+}
